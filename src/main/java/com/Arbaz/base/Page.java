@@ -90,7 +90,8 @@ public class Page {
 
 			if (config.getProperty("browser").equals("firefox")) {
 
-				// System.setProperty("webdriver.gecko.driver", "gecko.exe");
+				System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")
+						+ "\\src\\test\\resources\\com\\Arbaz\\executables\\geckodriver.exe");
 				driver = new FirefoxDriver();
 
 			} else if (config.getProperty("browser").equals("chrome")) {
