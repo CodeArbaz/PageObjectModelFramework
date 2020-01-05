@@ -18,7 +18,7 @@ public class ZohoAppPage extends Page {
 	public CRMHomePage gotoCRM(String orgName, String orgPhoneNumber)
 	{
 		//driver.findElement(By.xpath("//span[@class='zicon-apps-crm zicon-apps-96']")).click();
-		click("crmlink_XPATH");
+		click("crmlink_CSS");
 		//driver.findElement(By.xpath("//input[@id='orgName']")).sendKeys(orgName);
 		//driver.findElement(By.xpath("//input[@id='orgPhone']")).sendKeys(orgPhoneNumber);
 		//Uncheck load sample data checkbox
