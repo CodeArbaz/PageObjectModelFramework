@@ -2,6 +2,7 @@ package com.Arbaz.testcases;
 
 import java.util.Hashtable;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.Arbaz.base.Page;
@@ -18,10 +19,11 @@ public class CreateAccountTest {
 	{
 		
 		ZohoAppPage zp= new ZohoAppPage();
-		zp.gotoCRM("TEST","1234567891");
+		//zp.gotoCRM("TEST","1234567891");
 		AccountsPage account= Page.menu.goToAccounts();
 		CreateAccountsPage cap= account.gotoCreateAccounts();
 		cap.createAccount(data.get("accountname"));
+		//Assert.fail("Create account test failed");
 		
 	}
 	
